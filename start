@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+venv_root="${HERMES_LOCAL_VENV:-${HOME}/.hermes/venvs/hermes-local}"
+launcher="${venv_root}/bin/hermes-local"
+
+if [[ ! -x "${launcher}" ]]; then
+  printf 'Hermes Local is not installed in %s\n' "${venv_root}" >&2
+  printf 'Run once: cd %s && python3 -m venv %s && %s/bin/pip install -e ".[web]"\n' \
+    "${project_root}" "${venv_root}" "${venv_root}" >&2
+  exit 2
+fi
+
+cd "${project_root}"
+if [[ $# -eq 0 ]]; then
+  exec "${launcher}"
+fi
+if [[ "${1}" == -* ]]; then
+  exec "${launcher}" dashboard --keep-model "$@"
+fi
+exec "${launcher}" "$@"

@@ -1,0 +1,61 @@
+# Merge ONLY the providers you use into ~/.hermes/config.yaml.
+# Every entry is disabled by default so an absent service does not clutter or
+# slow model discovery. Set enabled: true for the server you actually run.
+
+providers:
+  ollama-local:
+    name: Local Ollama
+    api: http://127.0.0.1:11434/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+  lm-studio-local:
+    name: Local LM Studio
+    api: http://127.0.0.1:1234/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+  vllm-local:
+    name: Local vLLM
+    api: http://127.0.0.1:8000/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+  llama-cpp-local:
+    name: Local llama.cpp
+    api: http://127.0.0.1:8080/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+  localai-local:
+    name: LocalAI
+    api: http://127.0.0.1:8080/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+  sglang-local:
+    name: Local SGLang
+    api: http://127.0.0.1:30000/v1
+    transport: chat_completions
+    discover_models: true
+    context_length: 65536
+    enabled: false
+
+# Example remote OpenAI-compatible endpoint. Keep the secret in .env.
+#  company-gateway:
+#    name: Company LLM Gateway
+#    api: https://llm.example.com/v1
+#    key_env: COMPANY_LLM_API_KEY
+#    transport: chat_completions
+#    discover_models: true
+#    enabled: true

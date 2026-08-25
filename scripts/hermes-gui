@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ -s /home/luo/.nvm/nvm.sh ]]; then
+  source /home/luo/.nvm/nvm.sh
+fi
+exec /home/luo/.local/bin/hermes gui --source --skip-build "$@"

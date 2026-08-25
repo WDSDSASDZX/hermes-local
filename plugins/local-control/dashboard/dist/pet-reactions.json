@@ -1,0 +1,893 @@
+{
+  "source": {
+    "project": "abderrahimghazali/clawd-pet",
+    "license": "MIT",
+    "commit": "b208f0c04a4084a17f4e5f5adf5198a752be0b36"
+  },
+  "action_count": 147,
+  "dialogue_count": 147,
+  "actions": [
+    {
+      "slug": "200",
+      "label": "200",
+      "category": "system",
+      "line": "200模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "201",
+      "label": "201",
+      "category": "system",
+      "line": "201模式启动。代码能跑，别问为什么，问就是量子纠缠。"
+    },
+    {
+      "slug": "204",
+      "label": "204",
+      "category": "system",
+      "line": "204模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "301",
+      "label": "301",
+      "category": "system",
+      "line": "301模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "400",
+      "label": "400",
+      "category": "system",
+      "line": "400模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "401",
+      "label": "401",
+      "category": "system",
+      "line": "401模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "402",
+      "label": "402",
+      "category": "system",
+      "line": "402模式启动。这波不是绕路，是架构层面的观光。"
+    },
+    {
+      "slug": "403",
+      "label": "403",
+      "category": "system",
+      "line": "403模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "404",
+      "label": "404",
+      "category": "system",
+      "line": "404模式启动。问题不大，最多写进下一版已知问题。"
+    },
+    {
+      "slug": "408",
+      "label": "408",
+      "category": "system",
+      "line": "408模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "410",
+      "label": "410",
+      "category": "system",
+      "line": "410模式启动。日志说一切正常，用户说日志在撒谎。"
+    },
+    {
+      "slug": "418",
+      "label": "418",
+      "category": "system",
+      "line": "418模式启动。我掐指一算，这里缺一个真正的边界条件。"
+    },
+    {
+      "slug": "429",
+      "label": "429",
+      "category": "system",
+      "line": "429模式启动。只改一行——每次大型重构的开场白。"
+    },
+    {
+      "slug": "451",
+      "label": "451",
+      "category": "system",
+      "line": "451模式启动。性能优化完成：进度条现在跑得更快了。"
+    },
+    {
+      "slug": "500",
+      "label": "500",
+      "category": "system",
+      "line": "500模式启动。先让它工作，再让它优雅，最后假装一开始就这样设计。"
+    },
+    {
+      "slug": "502",
+      "label": "502",
+      "category": "system",
+      "line": "502模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "503",
+      "label": "503",
+      "category": "system",
+      "line": "503模式启动。这个状态很有艺术感，尤其像现代主义事故现场。"
+    },
+    {
+      "slug": "504",
+      "label": "504",
+      "category": "system",
+      "line": "504模式启动。我有预感，重启能治，但我们先尊重科学。"
+    },
+    {
+      "slug": "angry",
+      "label": "生气",
+      "category": "mood",
+      "line": "生气模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "astronaut",
+      "label": "Astronaut",
+      "category": "play",
+      "line": "Astronaut模式启动。放心，所有危险操作都被命名成了 safeMode。"
+    },
+    {
+      "slug": "autumn",
+      "label": "Autumn",
+      "category": "play",
+      "line": "Autumn模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "battery-low",
+      "label": "电量·告急",
+      "category": "system",
+      "line": "电量告急，我的积极性已自动切到省电模式。"
+    },
+    {
+      "slug": "birthday",
+      "label": "Birthday",
+      "category": "play",
+      "line": "Birthday模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "bored",
+      "label": "无聊",
+      "category": "mood",
+      "line": "无聊模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "bowling",
+      "label": "Bowling",
+      "category": "play",
+      "line": "Bowling模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "camping",
+      "label": "Camping",
+      "category": "play",
+      "line": "Camping模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "celebrating",
+      "label": "庆祝",
+      "category": "play",
+      "line": "成功了！把‘偶然’两个字从复盘里删掉。"
+    },
+    {
+      "slug": "charging",
+      "label": "充电",
+      "category": "play",
+      "line": "充电模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "chef",
+      "label": "Chef",
+      "category": "play",
+      "line": "Chef模式启动。问题不大，最多写进下一版已知问题。"
+    },
+    {
+      "slug": "christmas",
+      "label": "Christmas",
+      "category": "play",
+      "line": "Christmas模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "clapping",
+      "label": "Clapping",
+      "category": "play",
+      "line": "Clapping模式启动。日志说一切正常，用户说日志在撒谎。"
+    },
+    {
+      "slug": "climbing",
+      "label": "Climbing",
+      "category": "play",
+      "line": "Climbing模式启动。我掐指一算，这里缺一个真正的边界条件。"
+    },
+    {
+      "slug": "coding",
+      "label": "写码",
+      "category": "work",
+      "line": "我开始写了。至于能不能跑，要看 bug 今天讲不讲武德。"
+    },
+    {
+      "slug": "coffee",
+      "label": "咖啡",
+      "category": "play",
+      "line": "咖啡已注入，类型检查开始产生宗教体验。"
+    },
+    {
+      "slug": "confused",
+      "label": "迷惑",
+      "category": "mood",
+      "line": "我看懂了每个字，但它们站在一起就开始搞抽象。"
+    },
+    {
+      "slug": "cool",
+      "label": "耍帅",
+      "category": "play",
+      "line": "耍帅模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "crab-walking",
+      "label": "螃蟹·横着走",
+      "category": "play",
+      "line": "正着走太普通，今天用螃蟹架构横向扩展。"
+    },
+    {
+      "slug": "crafting",
+      "label": "Crafting",
+      "category": "play",
+      "line": "Crafting模式启动。我有预感，重启能治，但我们先尊重科学。"
+    },
+    {
+      "slug": "crying",
+      "label": "Crying",
+      "category": "mood",
+      "line": "Crying模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "dancing",
+      "label": "跳舞",
+      "category": "play",
+      "line": "构建通过！先跳舞，回归测试的事明天再说。"
+    },
+    {
+      "slug": "detective",
+      "label": "侦探",
+      "category": "play",
+      "line": "侦探模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "disconnected",
+      "label": "掉线",
+      "category": "system",
+      "line": "网络断了。好消息是所有云服务突然都本地优先了。"
+    },
+    {
+      "slug": "dizzy",
+      "label": "眩晕",
+      "category": "play",
+      "line": "眩晕模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "dj",
+      "label": "Dj",
+      "category": "play",
+      "line": "Dj模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "driving",
+      "label": "Driving",
+      "category": "play",
+      "line": "Driving模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "drumming",
+      "label": "Drumming",
+      "category": "play",
+      "line": "Drumming模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "eating",
+      "label": "干饭",
+      "category": "play",
+      "line": "干饭模式启动。这波不是绕路，是架构层面的观光。"
+    },
+    {
+      "slug": "embarrassed",
+      "label": "Embarrassed",
+      "category": "mood",
+      "line": "Embarrassed模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "error",
+      "label": "报错",
+      "category": "system",
+      "line": "报错不是失败，是程序终于愿意说人话了。"
+    },
+    {
+      "slug": "evil",
+      "label": "Evil",
+      "category": "play",
+      "line": "Evil模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "facepalm",
+      "label": "捂脸",
+      "category": "play",
+      "line": "这个需求很简单——产品经理如是说。"
+    },
+    {
+      "slug": "fire",
+      "label": "着火",
+      "category": "system",
+      "line": "着火模式启动。我掐指一算，这里缺一个真正的边界条件。"
+    },
+    {
+      "slug": "fishing",
+      "label": "Fishing",
+      "category": "play",
+      "line": "Fishing模式启动。只改一行——每次大型重构的开场白。"
+    },
+    {
+      "slug": "flexing",
+      "label": "Flexing",
+      "category": "play",
+      "line": "Flexing模式启动。性能优化完成：进度条现在跑得更快了。"
+    },
+    {
+      "slug": "flying",
+      "label": "Flying",
+      "category": "play",
+      "line": "Flying模式启动。先让它工作，再让它优雅，最后假装一开始就这样设计。"
+    },
+    {
+      "slug": "gaming",
+      "label": "摸鱼",
+      "category": "play",
+      "line": "摸鱼模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "gardening",
+      "label": "Gardening",
+      "category": "play",
+      "line": "Gardening模式启动。这个状态很有艺术感，尤其像现代主义事故现场。"
+    },
+    {
+      "slug": "gift",
+      "label": "Gift",
+      "category": "play",
+      "line": "Gift模式启动。我有预感，重启能治，但我们先尊重科学。"
+    },
+    {
+      "slug": "going-away",
+      "label": "准备·跑路",
+      "category": "play",
+      "line": "准备·跑路模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "grumpy",
+      "label": "Grumpy",
+      "category": "mood",
+      "line": "Grumpy模式启动。放心，所有危险操作都被命名成了 safeMode。"
+    },
+    {
+      "slug": "halloween",
+      "label": "Halloween",
+      "category": "play",
+      "line": "Halloween模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "hallucinating",
+      "label": "幻觉",
+      "category": "play",
+      "line": "这不是幻觉，这是缺少来源标注的创造力。"
+    },
+    {
+      "slug": "happy",
+      "label": "开心",
+      "category": "mood",
+      "line": "今天状态不错，连 404 看起来都像彩蛋。"
+    },
+    {
+      "slug": "hopeful",
+      "label": "Hopeful",
+      "category": "play",
+      "line": "Hopeful模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "ice-cream",
+      "label": "Ice·Cream",
+      "category": "play",
+      "line": "Ice·Cream模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "idea",
+      "label": "灵感",
+      "category": "play",
+      "line": "有个大胆想法。放心，删库权限暂时还没申请。"
+    },
+    {
+      "slug": "idle-living",
+      "label": "Idle·Living",
+      "category": "play",
+      "line": "Idle·Living模式启动。这波不是绕路，是架构层面的观光。"
+    },
+    {
+      "slug": "jealous",
+      "label": "Jealous",
+      "category": "play",
+      "line": "Jealous模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "king",
+      "label": "King",
+      "category": "play",
+      "line": "King模式启动。问题不大，最多写进下一版已知问题。"
+    },
+    {
+      "slug": "laughing",
+      "label": "大笑",
+      "category": "mood",
+      "line": "大笑模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "lifting",
+      "label": "Lifting",
+      "category": "play",
+      "line": "Lifting模式启动。日志说一切正常，用户说日志在撒谎。"
+    },
+    {
+      "slug": "loading",
+      "label": "加载",
+      "category": "work",
+      "line": "先别催，缓存正在回忆它自己是谁。"
+    },
+    {
+      "slug": "love",
+      "label": "贴贴",
+      "category": "mood",
+      "line": "贴贴模式启动。只改一行——每次大型重构的开场白。"
+    },
+    {
+      "slug": "magic",
+      "label": "魔法",
+      "category": "play",
+      "line": "魔法模式启动。性能优化完成：进度条现在跑得更快了。"
+    },
+    {
+      "slug": "mail",
+      "label": "Mail",
+      "category": "play",
+      "line": "Mail模式启动。先让它工作，再让它优雅，最后假装一开始就这样设计。"
+    },
+    {
+      "slug": "meditating",
+      "label": "冥想",
+      "category": "play",
+      "line": "冥想模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "mindblown",
+      "label": "脑洞炸裂",
+      "category": "play",
+      "line": "脑洞炸裂模式启动。这个状态很有艺术感，尤其像现代主义事故现场。"
+    },
+    {
+      "slug": "money",
+      "label": "Money",
+      "category": "play",
+      "line": "预算很充足，足到刚好够买一个免费方案。"
+    },
+    {
+      "slug": "music",
+      "label": "Music",
+      "category": "play",
+      "line": "Music模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "new-year",
+      "label": "New·Year",
+      "category": "play",
+      "line": "New·Year模式启动。放心，所有危险操作都被命名成了 safeMode。"
+    },
+    {
+      "slug": "ninja",
+      "label": "忍者",
+      "category": "play",
+      "line": "忍者模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "notification",
+      "label": "通知",
+      "category": "play",
+      "line": "叮！你有一条来自未来自己的催更消息。"
+    },
+    {
+      "slug": "painting",
+      "label": "Painting",
+      "category": "play",
+      "line": "Painting模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "peeking",
+      "label": "偷看",
+      "category": "play",
+      "line": "偷看模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "photography",
+      "label": "Photography",
+      "category": "play",
+      "line": "Photography模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "pirate",
+      "label": "Pirate",
+      "category": "play",
+      "line": "Pirate模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "podcast",
+      "label": "Podcast",
+      "category": "play",
+      "line": "Podcast模式启动。这波不是绕路，是架构层面的观光。"
+    },
+    {
+      "slug": "praying",
+      "label": "Praying",
+      "category": "play",
+      "line": "Praying模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "rainbow",
+      "label": "Rainbow",
+      "category": "play",
+      "line": "Rainbow模式启动。问题不大，最多写进下一版已知问题。"
+    },
+    {
+      "slug": "reading",
+      "label": "Reading",
+      "category": "work",
+      "line": "Reading模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "rocket",
+      "label": "火箭",
+      "category": "play",
+      "line": "准备起飞。没有回滚计划，但气氛已经到位。"
+    },
+    {
+      "slug": "running",
+      "label": "狂奔",
+      "category": "play",
+      "line": "狂奔模式启动。我掐指一算，这里缺一个真正的边界条件。"
+    },
+    {
+      "slug": "sad",
+      "label": "Sad",
+      "category": "mood",
+      "line": "Sad模式启动。只改一行——每次大型重构的开场白。"
+    },
+    {
+      "slug": "scared",
+      "label": "Scared",
+      "category": "mood",
+      "line": "Scared模式启动。性能优化完成：进度条现在跑得更快了。"
+    },
+    {
+      "slug": "security",
+      "label": "安全",
+      "category": "system",
+      "line": "安全检查启动：首先确认密码不是 123456。"
+    },
+    {
+      "slug": "shipping",
+      "label": "Shipping",
+      "category": "play",
+      "line": "Shipping模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "shrug",
+      "label": "摊手",
+      "category": "play",
+      "line": "在我机器上能跑。这句话已自动加入事故证据。"
+    },
+    {
+      "slug": "sick",
+      "label": "Sick",
+      "category": "play",
+      "line": "Sick模式启动。我有预感，重启能治，但我们先尊重科学。"
+    },
+    {
+      "slug": "singing",
+      "label": "Singing",
+      "category": "play",
+      "line": "Singing模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "skateboard",
+      "label": "Skateboard",
+      "category": "play",
+      "line": "Skateboard模式启动。放心，所有危险操作都被命名成了 safeMode。"
+    },
+    {
+      "slug": "skeptical",
+      "label": "怀疑",
+      "category": "mood",
+      "line": "我不是质疑你，我只是替未来的事故报告提前采访。"
+    },
+    {
+      "slug": "sleeping",
+      "label": "睡觉",
+      "category": "play",
+      "line": "我先睡五分钟。进程不退，只是灵魂挂起。"
+    },
+    {
+      "slug": "smile",
+      "label": "Smile",
+      "category": "play",
+      "line": "Smile模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "snow",
+      "label": "Snow",
+      "category": "play",
+      "line": "Snow模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "spring",
+      "label": "Spring",
+      "category": "play",
+      "line": "Spring模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "star",
+      "label": "闪耀",
+      "category": "play",
+      "line": "闪耀模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "studying",
+      "label": "学习",
+      "category": "work",
+      "line": "学习模式启动。这波不是绕路，是架构层面的观光。"
+    },
+    {
+      "slug": "summer",
+      "label": "Summer",
+      "category": "play",
+      "line": "Summer模式启动。先保存，灵感和进程都不保证常驻。"
+    },
+    {
+      "slug": "superhero",
+      "label": "Superhero",
+      "category": "play",
+      "line": "Superhero模式启动。问题不大，最多写进下一版已知问题。"
+    },
+    {
+      "slug": "surfing",
+      "label": "Surfing",
+      "category": "play",
+      "line": "Surfing模式启动。理论上稳了；实践正在赶来的路上。"
+    },
+    {
+      "slug": "surprised",
+      "label": "震惊",
+      "category": "mood",
+      "line": "震惊模式启动。日志说一切正常，用户说日志在撒谎。"
+    },
+    {
+      "slug": "swimming",
+      "label": "Swimming",
+      "category": "play",
+      "line": "Swimming模式启动。我掐指一算，这里缺一个真正的边界条件。"
+    },
+    {
+      "slug": "telescope",
+      "label": "Telescope",
+      "category": "play",
+      "line": "Telescope模式启动。只改一行——每次大型重构的开场白。"
+    },
+    {
+      "slug": "thanksgiving",
+      "label": "Thanksgiving",
+      "category": "play",
+      "line": "Thanksgiving模式启动。性能优化完成：进度条现在跑得更快了。"
+    },
+    {
+      "slug": "time-travel",
+      "label": "Time·Travel",
+      "category": "play",
+      "line": "Time·Travel模式启动。先让它工作，再让它优雅，最后假装一开始就这样设计。"
+    },
+    {
+      "slug": "trophy",
+      "label": "奖杯",
+      "category": "play",
+      "line": "奖杯模式启动。如果没有报错，可能只是错误输出被关了。"
+    },
+    {
+      "slug": "umbrella",
+      "label": "Umbrella",
+      "category": "play",
+      "line": "Umbrella模式启动。这个状态很有艺术感，尤其像现代主义事故现场。"
+    },
+    {
+      "slug": "valentine",
+      "label": "Valentine",
+      "category": "play",
+      "line": "Valentine模式启动。我有预感，重启能治，但我们先尊重科学。"
+    },
+    {
+      "slug": "waving",
+      "label": "挥手",
+      "category": "play",
+      "line": "挥手模式启动。需求正在生长，工期正在进行光合作用。"
+    },
+    {
+      "slug": "winter",
+      "label": "Winter",
+      "category": "play",
+      "line": "Winter模式启动。放心，所有危险操作都被命名成了 safeMode。"
+    },
+    {
+      "slug": "working-beacon",
+      "label": "工作·Beacon",
+      "category": "work",
+      "line": "工作·Beacon模式启动。收到，不过建议先给需求立个碑。"
+    },
+    {
+      "slug": "working-building",
+      "label": "工作·构建",
+      "category": "work",
+      "line": "构建中。风扇正在用转速表达技术债。"
+    },
+    {
+      "slug": "working-carrying",
+      "label": "工作·搬砖",
+      "category": "work",
+      "line": "工作·搬砖模式启动。正在把 TODO 翻译成‘未来的核心功能’。"
+    },
+    {
+      "slug": "working-conducting",
+      "label": "工作·指挥",
+      "category": "work",
+      "line": "工作·指挥模式启动。甲方要五彩斑斓的黑，我先给显卡上柱香。"
+    },
+    {
+      "slug": "working-confused",
+      "label": "工作·迷惑",
+      "category": "work",
+      "line": "工作·迷惑模式启动。今日原则：小步提交，大胆甩锅。"
+    },
+    {
+      "slug": "working-context-full",
+      "label": "工作·上下文·爆满",
+      "category": "work",
+      "line": "上下文满了，脑子正在从单页应用退化成分页查询。"
+    },
+    {
+      "slug": "working-debugger",
+      "label": "工作·调试",
+      "category": "work",
+      "line": "我不是卡住，我在和 bug 进行高层会谈。"
+    },
+    {
+      "slug": "working-deploying",
+      "label": "工作·部署",
+      "category": "work",
+      "line": "部署按钮已点。现在进入传统艺能：盯日志。"
+    },
+    {
+      "slug": "working-firefighting",
+      "label": "工作·救火",
+      "category": "work",
+      "line": "线上着火了？别慌，我带了灭火器和 git blame。"
+    },
+    {
+      "slug": "working-juggling",
+      "label": "工作·杂耍",
+      "category": "work",
+      "line": "正在并行处理。准确说，是同时接住多个锅。"
+    },
+    {
+      "slug": "working-meeting",
+      "label": "工作·开会",
+      "category": "work",
+      "line": "这个会很重要，重要到足以再开一个会讨论它。"
+    },
+    {
+      "slug": "working-merging",
+      "label": "工作·合并",
+      "category": "work",
+      "line": "合并中。两条时间线正在争夺谁才是正史。"
+    },
+    {
+      "slug": "working-oncall",
+      "label": "工作·值班",
+      "category": "work",
+      "line": "值班中。每一次提示音都像命运敲门。"
+    },
+    {
+      "slug": "working-overheated",
+      "label": "工作·过热",
+      "category": "work",
+      "line": "CPU 在冒汗，我也在冒汗，只有产品经理很清凉。"
+    },
+    {
+      "slug": "working-pairing",
+      "label": "工作·结对",
+      "category": "work",
+      "line": "结对模式开启：你负责大胆，我负责 git diff。"
+    },
+    {
+      "slug": "working-pushing",
+      "label": "工作·推送",
+      "category": "work",
+      "line": "推上去了。愿远端分支保佑我们。"
+    },
+    {
+      "slug": "working-reviewing",
+      "label": "工作·审查",
+      "category": "work",
+      "line": "我只看一眼……好吧，这一眼看出了十二个 TODO。"
+    },
+    {
+      "slug": "working-rollback",
+      "label": "工作·回滚",
+      "category": "work",
+      "line": "时间倒流术启动。刚才那版就当大家集体失忆。"
+    },
+    {
+      "slug": "working-rubber-duck",
+      "label": "工作·橡皮·鸭",
+      "category": "work",
+      "line": "鸭总已就位。你再讲一遍，答案通常会自己羞愧地出现。"
+    },
+    {
+      "slug": "working-sweeping",
+      "label": "工作·扫尾",
+      "category": "work",
+      "line": "开始扫尾。通常尾巴下面还藏着三只 bug。"
+    },
+    {
+      "slug": "working-testing",
+      "label": "工作·测试",
+      "category": "work",
+      "line": "测试绿了不代表没问题，只代表问题学会了潜伏。"
+    },
+    {
+      "slug": "working-thinking",
+      "label": "工作·思考",
+      "category": "work",
+      "line": "正在深度思考。外表像发呆，内核确实也差不多。"
+    },
+    {
+      "slug": "working-tool-calling",
+      "label": "工作·工具·调用",
+      "category": "work",
+      "line": "正在摇工具人——等等，工具人竟是我自己。"
+    },
+    {
+      "slug": "working-typing",
+      "label": "工作·打字",
+      "category": "work",
+      "line": "键盘很忙，产出多少暂时属于商业机密。"
+    },
+    {
+      "slug": "working-wizard",
+      "label": "工作·魔法师",
+      "category": "work",
+      "line": "需求不明确没关系，先施一个‘合理猜测术’。"
+    },
+    {
+      "slug": "yawning",
+      "label": "哈欠",
+      "category": "play",
+      "line": "哈欠模式启动。别急，优雅和截止日期正在单挑。"
+    },
+    {
+      "slug": "yoga",
+      "label": "瑜伽",
+      "category": "play",
+      "line": "瑜伽模式启动。这波不是绕路，是架构层面的观光。"
+    }
+  ]
+}
