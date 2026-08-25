@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+"""
+Hermes Agent CLI launcher.
+
+This wrapper should behave like the installed `hermes` command, including
+subcommands such as `gateway`, `cron`, and `doctor`.
+"""
+
+import os
+import sys
+from pathlib import Path
+
+
+def _restart_in_managed_venv(import_error: ModuleNotFoundError) -> None:
+    """Retry with the managed Hermes interpreter when system Python lacks deps."""
+    venv_root = Path(
+        os.environ.get("HERMES_LOCAL_VENV", Path.home() / ".hermes" / "venvs" / "hermes-local")
+    )
+    executable = venv_root / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
+
+    already_managed = os.path.abspath(sys.executable) == os.path.abspath(executable)
+
+    if not already_managed and executable.is_file() and os.access(executable, os.X_OK):
+        os.execv(
+            str(executable),
+            [str(executable), str(Path(__file__).resolve()), *sys.argv[1:]],
+        )
+
+    raise import_error
+
+
+if __name__ == "__main__":
+    try:
+        from hermes_cli.main import main
+    except ModuleNotFoundError as exc:
+        _restart_in_managed_venv(exc)
+    main()

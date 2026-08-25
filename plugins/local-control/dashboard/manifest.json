@@ -1,0 +1,11 @@
+{
+  "name": "local-control",
+  "label": "模型控制塔",
+  "description": "Bright model control tower, runtime trace center, and interactive companion.",
+  "icon": "Activity",
+  "version": "0.3.0",
+  "tab": { "path": "/local", "position": "after:analytics" },
+  "entry": "dist/index.js",
+  "css": "dist/style-bright.css",
+  "api": "plugin_api.py"
+}

@@ -1,0 +1,26 @@
+# Merge this fragment into ~/.hermes/config.yaml after replacing model ids.
+# Hermes only advances the chain on retryable provider failures; it does not
+# silently fail over on authentication or invalid-request errors.
+
+model:
+  provider: openrouter
+  default: YOUR_PRIMARY_MODEL_ID
+
+fallback_providers:
+  - provider: deepseek
+    model: YOUR_DEEPSEEK_MODEL_ID
+  - provider: gemini
+    model: YOUR_GEMINI_MODEL_ID
+
+# Auxiliary jobs can use a cheaper/faster route while main chat keeps the
+# primary model. Leave provider: auto to inherit the main/fallback policy.
+auxiliary:
+  title_generation:
+    provider: auto
+    model: ""
+  compression:
+    provider: auto
+    model: ""
+  vision:
+    provider: auto
+    model: ""
