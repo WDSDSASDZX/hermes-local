@@ -88,8 +88,17 @@ describe('local desktop pack stays out of the publish path', () => {
 
     assert.ok(Array.isArray(configs) && configs.length > 0)
     assert.equal(configs[0].provider, 'github')
-    assert.equal(configs[0].owner, 'NousResearch')
-    assert.equal(configs[0].repo, 'hermes-agent')
+
+    const repositoryUrl =
+      typeof desktopPkg.repository === 'string'
+        ? desktopPkg.repository
+        : desktopPkg.repository?.url
+    const repositoryMatch = repositoryUrl?.match(
+      /github\.com[/:]([^/]+)\/([^/]+?)(?:\.git)?$/
+    )
+    assert.ok(repositoryMatch, 'repository must be a GitHub URL')
+    assert.equal(configs[0].owner, repositoryMatch[1])
+    assert.equal(configs[0].repo, repositoryMatch[2])
   })
 
   test('a package without the repository field is what breaks resolution', async () => {

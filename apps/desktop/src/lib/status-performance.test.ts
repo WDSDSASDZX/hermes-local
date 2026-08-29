@@ -19,6 +19,7 @@ describe('statusPerformanceLabels', () => {
       ttft_avg_seconds: 3.4,
       turns: 3
     }
+
     expect(statusPerformanceLabels(usage)).toEqual([
       'last response 6.1s',
       '3 turns · 18 tools',

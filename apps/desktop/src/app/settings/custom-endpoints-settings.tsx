@@ -16,12 +16,7 @@ import { Check, Globe, Loader2, Plus, Save, Trash2, Zap } from '@/lib/icons'
 import { cn } from '@/lib/utils'
 import { confirm } from '@/store/confirm'
 import { notify, notifyError } from '@/store/notifications'
-import type {
-  AnthropicAuthMode,
-  CustomEndpoint,
-  CustomEndpointApiMode,
-  CustomEndpointUpdate
-} from '@/types/hermes'
+import type { AnthropicAuthMode, CustomEndpoint, CustomEndpointApiMode, CustomEndpointUpdate } from '@/types/hermes'
 
 import { EmptyState, Pill, SectionHeading, SettingsContent, SettingsSkeleton } from './primitives'
 
@@ -278,7 +273,9 @@ export function CustomEndpointsSettings({ onConfigSaved, onMainModelChanged }: C
                     </div>
                     <div className="mt-1 flex flex-wrap gap-2 text-xs text-muted-foreground">
                       <span>{endpoint.model}</span>
-                      <Pill>{endpoint.api_mode === 'anthropic_messages' ? 'Anthropic Messages' : endpoint.api_mode}</Pill>
+                      <Pill>
+                        {endpoint.api_mode === 'anthropic_messages' ? 'Anthropic Messages' : endpoint.api_mode}
+                      </Pill>
                       {endpoint.has_api_key && <span>{endpoint.api_key_preview ?? 'API key set'}</span>}
                     </div>
                   </button>
@@ -308,7 +305,10 @@ export function CustomEndpointsSettings({ onConfigSaved, onMainModelChanged }: C
                 </div>
               ))
             ) : (
-              <EmptyState description="Add an Anthropic-native or OpenAI-compatible relay below." title="No relay providers" />
+              <EmptyState
+                description="Add an Anthropic-native or OpenAI-compatible relay below."
+                title="No relay providers"
+              />
             )}
           </div>
         </section>
@@ -338,7 +338,9 @@ export function CustomEndpointsSettings({ onConfigSaved, onMainModelChanged }: C
               Endpoint URL
               <Input
                 onChange={event => setForm(current => ({ ...current, baseUrl: event.target.value }))}
-                placeholder={form.apiMode === 'anthropic_messages' ? 'https://relay.example.com' : 'https://relay.example.com/v1'}
+                placeholder={
+                  form.apiMode === 'anthropic_messages' ? 'https://relay.example.com' : 'https://relay.example.com/v1'
+                }
                 value={form.baseUrl}
               />
             </label>
@@ -346,12 +348,12 @@ export function CustomEndpointsSettings({ onConfigSaved, onMainModelChanged }: C
               <label className="grid gap-1.5 text-xs text-muted-foreground">
                 API format
                 <Select
-                  onValueChange={value =>
-                    setForm(current => ({ ...current, apiMode: value as CustomEndpointApiMode }))
-                  }
+                  onValueChange={value => setForm(current => ({ ...current, apiMode: value as CustomEndpointApiMode }))}
                   value={form.apiMode}
                 >
-                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="anthropic_messages">Anthropic Messages (Claude native)</SelectItem>
                     <SelectItem value="chat_completions">OpenAI Chat Completions</SelectItem>
@@ -369,7 +371,9 @@ export function CustomEndpointsSettings({ onConfigSaved, onMainModelChanged }: C
                     }
                     value={form.anthropicAuth}
                   >
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="auto">Automatic (recommended)</SelectItem>
                       <SelectItem value="x_api_key">x-api-key</SelectItem>

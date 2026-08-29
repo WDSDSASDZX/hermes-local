@@ -1,6 +1,7 @@
 import { fmtDuration } from '../domain/messages.js'
-import { fmtK } from './text.js'
 import type { Usage } from '../types.js'
+
+import { fmtK } from './text.js'
 
 export const fmtMetricSeconds = (seconds: number): string => {
   const safe = Math.max(0, seconds)
@@ -16,9 +17,7 @@ export function statusPerformanceLabels(usage: Usage): string[] {
   const toolCalls = Math.max(0, Math.floor(usage.tool_calls || 0))
 
   if (turns || toolCalls) {
-    labels.push(
-      [turns ? `${turns} turns` : '', toolCalls ? `${toolCalls} tools` : ''].filter(Boolean).join(' · ')
-    )
+    labels.push([turns ? `${turns} turns` : '', toolCalls ? `${toolCalls} tools` : ''].filter(Boolean).join(' · '))
   } else if (calls) {
     labels.push(`${calls} LLM calls`)
   }
@@ -28,7 +27,10 @@ export function statusPerformanceLabels(usage: Usage): string[] {
 
   if (llmSeconds || toolSeconds) {
     labels.push(
-      [llmSeconds ? `LLM ${fmtMetricSeconds(llmSeconds)}` : '', toolSeconds ? `tools ${fmtMetricSeconds(toolSeconds)}` : '']
+      [
+        llmSeconds ? `LLM ${fmtMetricSeconds(llmSeconds)}` : '',
+        toolSeconds ? `tools ${fmtMetricSeconds(toolSeconds)}` : ''
+      ]
         .filter(Boolean)
         .join(' · ')
     )
@@ -39,7 +41,10 @@ export function statusPerformanceLabels(usage: Usage): string[] {
 
   if (ttft || rate) {
     labels.push(
-      [ttft ? `TTFT ${fmtMetricSeconds(ttft)}` : '', rate ? `${rate >= 10 ? rate.toFixed(0) : rate.toFixed(1)} tok/s` : '']
+      [
+        ttft ? `TTFT ${fmtMetricSeconds(ttft)}` : '',
+        rate ? `${rate >= 10 ? rate.toFixed(0) : rate.toFixed(1)} tok/s` : ''
+      ]
         .filter(Boolean)
         .join(' · ')
     )

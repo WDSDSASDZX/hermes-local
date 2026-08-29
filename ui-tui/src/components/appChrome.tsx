@@ -648,7 +648,7 @@ export function StatusRule({
           </Text>
         ) : null}
         {visiblePerformanceLabels.map(label => (
-          <Text key={label} color={t.color.muted} wrap="truncate-end">
+          <Text color={t.color.muted} key={label} wrap="truncate-end">
             {' │ '}
             {label}
           </Text>

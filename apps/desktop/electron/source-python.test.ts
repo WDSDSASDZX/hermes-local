@@ -32,14 +32,10 @@ test('source Python candidates support the documented hermes-dev environment', (
 })
 
 test('source Python candidates use Windows virtual environment layout', () => {
-  const candidates = sourcePythonCandidates(
-    'C:\\Users\\test\\hermes-local',
-    'C:\\Users\\test\\.hermes',
-    {
-      pathModule: path.win32,
-      platform: 'win32'
-    }
-  )
+  const candidates = sourcePythonCandidates('C:\\Users\\test\\hermes-local', 'C:\\Users\\test\\.hermes', {
+    pathModule: path.win32,
+    platform: 'win32'
+  })
 
   assert.deepEqual(candidates.slice(0, 3), [
     'C:\\Users\\test\\hermes-local\\.venv\\Scripts\\python.exe',
