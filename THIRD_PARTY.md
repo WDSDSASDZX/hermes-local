@@ -14,6 +14,10 @@ code. Their workflow was informed by public behavior and documentation from:
   source/runtime auto-discovery and lightweight browser entry points.
 - [Open WebUI](https://github.com/open-webui/open-webui) — local-first model
   discovery and OpenAI-compatible provider conventions.
+- [Jan](https://github.com/janhq/jan) — one-command local model
+  setup and desktop/CLI separation.
+- [OpenHands](https://github.com/OpenHands/OpenHands) — agent workspace
+  and control-surface information architecture.
 
 Hermes Garden vendors animated SVG pets from
 [abderrahimghazali/clawd-pet](https://github.com/abderrahimghazali/clawd-pet)
@@ -24,8 +28,8 @@ draggable state-and-speech interaction model was informed by
 [gibbon/agent-pet](https://github.com/gibbon/agent-pet), which is Apache-2.0;
 no agent-pet source is vendored.
 
-No source file from Hermes Studio, Hermes Agent WebUI, Open WebUI, or
-agent-pet is vendored by these additions. Hermes' provider configuration,
-atomic YAML writer, plugin SDK, dashboard, agent runtime, and tests remain the
-implementation authority. This keeps upstream updates practical and avoids
-parallel incompatible subsystems.
+No source file from Hermes Studio, Hermes Agent WebUI, Open WebUI, Jan,
+OpenHands, or agent-pet is vendored by these additions. Hermes' provider
+configuration, atomic YAML writer, plugin SDK, dashboard, agent runtime, and
+tests remain the implementation authority. This keeps upstream
+updates practical and avoids parallel incompatible subsystems.

@@ -2,6 +2,13 @@
 
 Thank you for contributing to Hermes Agent! This guide covers everything you need: setting up your dev environment, understanding the architecture, deciding what to build, and getting your PR merged.
 
+> **Hermes Local fork:** open issues and pull requests in
+> [WDSDSASDZX/hermes-local](https://github.com/WDSDSASDZX/hermes-local).
+> Use the local setup in [README.md](README.md), keep provider credentials out
+> of commits, and state whether a change belongs to this fork or should also be
+> proposed upstream. The detailed architecture and contribution guidance below
+> is inherited from Hermes Agent and remains applicable.
+
 ---
 
 ## Contribution Priorities
@@ -24,10 +31,10 @@ A quick search before you build saves your time and keeps the PR queue clean —
 
 - **Search both open *and* merged PRs and issues** for your topic or error symptom — the duplicate-check in the PR template fires at review time, after you've already done the work:
   ```bash
-  gh search issues --repo NousResearch/hermes-agent "<your terms>"
-  gh search prs --repo NousResearch/hermes-agent --state all "<your terms>"
+  gh search issues --repo WDSDSASDZX/hermes-local "<your terms>"
+  gh search prs --repo WDSDSASDZX/hermes-local --state all "<your terms>"
   ```
-  Or use the web UI: [issues](https://github.com/NousResearch/hermes-agent/issues?q=) · [PRs (all states)](https://github.com/NousResearch/hermes-agent/pulls?q=is%3Apr).
+  Or use the web UI: [issues](https://github.com/WDSDSASDZX/hermes-local/issues?q=) · [PRs (all states)](https://github.com/WDSDSASDZX/hermes-local/pulls?q=is%3Apr).
 - **The issue tracker can lag the code.** Many requested features are already implemented in-tree, so also search the source (`search_files`, or your editor's grep) for the capability before proposing it.
 - **If an open PR already addresses it**, consider reviewing or improving that one instead of opening a competing duplicate.
 - **For larger work**, comment on the issue to signal you're working on it, so others don't start the same thing.
