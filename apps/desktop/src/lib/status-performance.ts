@@ -20,6 +20,7 @@ export const formatMetricSeconds = (seconds: number): string => {
   if (safe < 10) {
     return `${safe.toFixed(1)}s`
   }
+
   const rounded = Math.round(safe)
   const hours = Math.floor(rounded / 3_600)
   const minutes = Math.floor((rounded % 3_600) / 60)
@@ -111,6 +112,7 @@ export function statusPerformanceSummary(usage: UsageStats): { detail?: string; 
   if (speed) {
     return { label: speed }
   }
+
   const fallback = statusPerformanceLabels(usage)[0]
 
   return fallback ? { label: fallback } : {}
